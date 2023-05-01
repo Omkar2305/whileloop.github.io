@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+</head>
+<body>
+    <div id="loop">
+
+    </div>
+
+   <script>
+    var task = true;
+    while(task) {
+        var opt = window.parseInt(prompt('select your choice : 1)add 2)sub 3)mul 4)Exit'));
+
+        if (opt == 1) {
+            var num1 = parseInt(window.prompt('enter the first number'));
+            var num2 = parseInt(window.prompt('enter your second number'));
+
+            function add(a,b){
+            alert(a+b);
+        }
+          add(num1, num2)
+        }
+        else if(opt == 2){
+             var num1 = parseInt(window.prompt('enter the first number'));
+            var num2 = parseInt(window.prompt('enter your second number'));
+
+            function sub(a,b){
+                alert(a - b);
+            }
+            sub(num1,num2)
+        }
+        else if(opt == 3){
+             var num1 = parseInt(window.prompt('enter the first number'));
+            var num2 = parseInt(window.prompt('enter your second number'));
+
+            function mul(a,b){
+                alert(a * b);
+            }
+            mul(num1, num2)
+        }
+        else if (opt == 4){
+
+            alert('Thank you')
+            task = false;
+        }
+}
+
+    
+   </script>
+</body>
+</html>
